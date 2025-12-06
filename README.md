@@ -156,18 +156,6 @@ Contributions are welcome! Feel free to:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- Designed with love for Arabic language learners worldwide
-- Inspired by the beauty of Arabic language and culture
-- Built to make learning Arabic accessible and enjoyable
-
-## 📧 Contact
-
-**Muhammad Sabdo** - [@Muhsabrys](https://github.com/Muhsabrys)
-
-Project Link: [https://github.com/Muhsabrys/Arabic](https://github.com/Muhsabrys/Arabic)
-
 ---
 
 <div align="center">
