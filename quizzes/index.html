@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes Module | Al-Manara</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: { 850: '#064e3b', 950: '#022c22' },
+                        gold: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        arabic: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .hover-card { transition: all 0.3s ease; }
+        .hover-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .lesson-badge { transition: all 0.2s ease; }
+        .lesson-card:hover .lesson-badge { transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-emerald-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-emerald-950 text-white shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-emerald-800 p-2 rounded-lg border border-gold-500">
+                        <i class="fa-solid fa-mosque text-gold-400 text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-bold tracking-wider">Al-Manara</span>
+                        <span class="text-xs text-emerald-300 font-arabic block">المنارة</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="../index.html" class="hover:text-gold-400 transition font-semibold">
+                        <i class="fa-solid fa-home mr-1"></i> Home
+                    </a>
+                    <span class="text-emerald-300">|</span>
+                    <span class="text-gold-400 font-semibold">
+                        <i class="fa-solid fa-clipboard-question mr-1"></i> Quizzes
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-emerald-800 to-emerald-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-2/3 mb-8 md:mb-0">
+                    <h1 class="text-5xl font-bold mb-4">Quizzes</h1>
+                    <h2 class="text-3xl font-arabic text-gold-400 mb-6">اختبارات</h2>
+                    <p class="text-xl text-emerald-100 mb-6 max-w-2xl">
+                        Explore 10 comprehensive lessons designed to help you master quizzes in Arabic.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-emerald-700 px-4 py-2 rounded-lg">
+                            <i class="fa-solid fa-list-check text-gold-400 mr-2"></i>
+                            <span class="font-semibold">10 Lessons</span>
+                        </div>
+                        <div class="bg-emerald-700 px-4 py-2 rounded-lg">
+                            <i class="fa-solid fa-clock text-gold-400 mr-2"></i>
+                            <span class="font-semibold">~15 min/lesson</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 text-center">
+                    <div class="bg-emerald-700 p-8 rounded-2xl inline-block border-4 border-gold-400">
+                        <i class="fa-solid fa-clipboard-question text-9xl text-gold-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16">
+        
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-emerald-950 mb-4">Choose Your Lesson</h2>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                Select a lesson below to begin learning. Each lesson builds upon the previous one.
+            </p>
+        </div>
+
+        <!-- Lessons Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Lesson 1 -->
+            <a href="./Lesson1.html" class="lesson-card bg-white rounded-xl shadow-lg border-2 border-gray-100 p-6 hover-card group">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="lesson-badge bg-red-100 text-red-800 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                        1
+                    </div>
+                    <div class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> Beginner
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition">Vocabulary Quiz 1</h3>
+                <p class="text-gray-600 mb-4">Master key concepts related to vocabulary quiz 1.</p>
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500"><i class="fa-solid fa-book mr-1"></i> Content</span>
+                    <span class="text-emerald-700 font-bold group-hover:text-gold-600 transition">Start <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                </div>
+            </a>
+
+            <!-- Lesson 2 -->
+            <a href="./Lesson2.html" class="lesson-card bg-white rounded-xl shadow-lg border-2 border-gray-100 p-6 hover-card group">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="lesson-badge bg-red-100 text-red-800 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                        2
+                    </div>
+                    <div class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> Beginner
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition">Grammar Quiz 1</h3>
+                <p class="text-gray-600 mb-4">Master key concepts related to grammar quiz 1.</p>
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500"><i class="fa-solid fa-book mr-1"></i> Content</span>
+                    <span class="text-emerald-700 font-bold group-hover:text-gold-600 transition">Start <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                </div>
+            </a>
+
+            <!-- Lesson 3 -->
+            <a href="./Lesson3.html" class="lesson-card bg-white rounded-xl shadow-lg border-2 border-gray-100 p-6 hover-card group">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="lesson-badge bg-red-100 text-red-800 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                        3
+                    </div>
+                    <div class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> Beginner
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition">Vocabulary Quiz 2</h3>
+                <p class="text-gray-600 mb-4">Master key concepts related to vocabulary quiz 2.</p>
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500"><i class="fa-solid fa-book mr-1"></i> Content</span>
+                    <span class="text-emerald-700 font-bold group-hover:text-gold-600 transition">Start <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                </div>
+            </a>
+
+            <!-- Lesson 4 -->
+            <a href="./Lesson4.html" class="lesson-card bg-white rounded-xl shadow-lg border-2 border-gray-100 p-6 hover-card group">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="lesson-badge bg-red-100 text-red-800 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                        4
+                    </div>
+                    <div class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> Intermediate
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition">Comprehensive Quiz 1</h3>
+                <p class="text-gray-600 mb-4">Master key concepts related to comprehensive quiz 1.</p>
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500"><i class="fa-solid fa-book mr-1"></i> Content</span>
+                    <span class="text-emerald-700 font-bold group-hover:text-gold-600 transition">Start <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                </div>
+            </a>
+
+            <!-- Lesson 5 -->
+            <a href="./Lesson5.html" class="lesson-card bg-white rounded-xl shadow-lg border-2 border-gray-100 p-6 hover-card group">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="lesson-badge bg-red-100 text-red-800 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                        5
+                    </div>
+                    <div class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> Intermediate
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition">Reading Comprehension 1</h3>
+                <p class="text-gray-600 mb-4">Master key concepts related to reading comprehension 1.</p>
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500"><i class="fa-solid fa-book mr-1"></i> Content</span>
+                    <span class="text-emerald-700 font-bold group-hover:text-gold-600 transition">Start <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                </div>
+            </a>
+
+            <!-- Lesson 6 -->
+            <a href="./Lesson6.html" class="lesson-card bg-white rounded-xl shadow-lg border-2 border-gray-100 p-6 hover-card group">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="lesson-badge bg-red-100 text-red-800 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                        6
+                    </div>
+                    <div class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> Intermediate
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition">Grammar Quiz 2</h3>
+                <p class="text-gray-600 mb-4">Master key concepts related to grammar quiz 2.</p>
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500"><i class="fa-solid fa-book mr-1"></i> Content</span>
+                    <span class="text-emerald-700 font-bold group-hover:text-gold-600 transition">Start <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                </div>
+            </a>
+
+            <!-- Lesson 7 -->
+            <a href="./Lesson7.html" class="lesson-card bg-white rounded-xl shadow-lg border-2 border-gray-100 p-6 hover-card group">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="lesson-badge bg-red-100 text-red-800 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                        7
+                    </div>
+                    <div class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> Advanced
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition">Vocabulary Quiz 3</h3>
+                <p class="text-gray-600 mb-4">Master key concepts related to vocabulary quiz 3.</p>
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500"><i class="fa-solid fa-book mr-1"></i> Content</span>
+                    <span class="text-emerald-700 font-bold group-hover:text-gold-600 transition">Start <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                </div>
+            </a>
+
+            <!-- Lesson 8 -->
+            <a href="./Lesson8.html" class="lesson-card bg-white rounded-xl shadow-lg border-2 border-gray-100 p-6 hover-card group">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="lesson-badge bg-red-100 text-red-800 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                        8
+                    </div>
+                    <div class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> Advanced
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition">Comprehensive Quiz 2</h3>
+                <p class="text-gray-600 mb-4">Master key concepts related to comprehensive quiz 2.</p>
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500"><i class="fa-solid fa-book mr-1"></i> Content</span>
+                    <span class="text-emerald-700 font-bold group-hover:text-gold-600 transition">Start <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                </div>
+            </a>
+
+            <!-- Lesson 9 -->
+            <a href="./Lesson9.html" class="lesson-card bg-white rounded-xl shadow-lg border-2 border-gray-100 p-6 hover-card group">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="lesson-badge bg-red-100 text-red-800 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                        9
+                    </div>
+                    <div class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> Advanced
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition">Reading Comprehension 2</h3>
+                <p class="text-gray-600 mb-4">Master key concepts related to reading comprehension 2.</p>
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500"><i class="fa-solid fa-book mr-1"></i> Content</span>
+                    <span class="text-emerald-700 font-bold group-hover:text-gold-600 transition">Start <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                </div>
+            </a>
+
+            <!-- Lesson 10 -->
+            <a href="./Lesson10.html" class="lesson-card bg-white rounded-xl shadow-lg border-2 border-gray-100 p-6 hover-card group">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="lesson-badge bg-red-100 text-red-800 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                        10
+                    </div>
+                    <div class="bg-gold-100 text-gold-700 px-3 py-1 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-star mr-1"></i> Mastery
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition">Final Assessment</h3>
+                <p class="text-gray-600 mb-4">Master key concepts related to final assessment.</p>
+                <div class="flex items-center justify-between text-sm">
+                    <span class="text-gray-500"><i class="fa-solid fa-book mr-1"></i> Content</span>
+                    <span class="text-emerald-700 font-bold group-hover:text-gold-600 transition">Start <i class="fa-solid fa-arrow-right ml-1"></i></span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-16 bg-gradient-to-r from-emerald-800 to-emerald-900 rounded-2xl p-8 text-white text-center">
+            <i class="fa-solid fa-lightbulb text-5xl text-gold-400 mb-4"></i>
+            <h3 class="text-3xl font-bold mb-4">Ready to Begin?</h3>
+            <p class="text-emerald-100 mb-6 max-w-2xl mx-auto">
+                Complete all 10 lessons to master quizzes in Arabic!
+            </p>
+            <a href="./Lesson1.html" class="inline-block bg-gold-500 hover:bg-gold-600 text-emerald-950 font-bold py-3 px-8 rounded-lg transition shadow-lg">
+                Start Lesson 1 <i class="fa-solid fa-rocket ml-2"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-white py-8 mt-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-mosque text-gold-400 text-2xl"></i>
+                        <div>
+                            <span class="text-xl font-bold">Al-Manara</span>
+                            <span class="text-xs text-emerald-300 font-arabic ml-2">المنارة</span>
+                        </div>
+                    </div>
+                    <p class="text-emerald-300 text-sm mt-2">Your lighthouse for learning Arabic</p>
+                </div>
+                <div>
+                    <a href="../index.html" class="bg-emerald-800 hover:bg-emerald-700 text-white font-semibold py-2 px-6 rounded-lg transition">
+                        <i class="fa-solid fa-arrow-left mr-2"></i> Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Greetings & Introductions | Vocabulary</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: { 850: '#064e3b', 950: '#022c22' },
+                        gold: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        arabic: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .word-card { transition: all 0.3s ease; cursor: pointer; }
+        .word-card:hover { transform: scale(1.05); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-emerald-50 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-emerald-950 text-white shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-emerald-800 p-2 rounded-lg border border-gold-500">
+                        <i class="fa-solid fa-mosque text-gold-400 text-xl"></i>
+                    </div>
+                    <span class="text-xl font-bold">Al-Manara</span>
+                </div>
+                <div class="flex items-center space-x-4 text-sm">
+                    <a href="../index.html" class="hover:text-gold-400 transition">
+                        <i class="fa-solid fa-home mr-1"></i> Home
+                    </a>
+                    <span class="text-emerald-500">|</span>
+                    <a href="./index.html" class="hover:text-gold-400 transition">
+                        <i class="fa-solid fa-book-open mr-1"></i> Vocabulary
+                    </a>
+                    <span class="text-emerald-500">|</span>
+                    <span class="text-gold-400 font-semibold">Lesson 1</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Lesson Header -->
+    <header class="bg-gradient-to-r from-emerald-700 to-emerald-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <span class="bg-emerald-600 px-4 py-1 rounded-full text-sm font-semibold inline-block mb-3">
+                        Lesson 1 of 10
+                    </span>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-3">Greetings & Introductions</h1>
+                    <p class="text-emerald-100 text-lg">Learn essential phrases to greet others and introduce yourself in Arabic</p>
+                </div>
+                <div class="hidden md:block">
+                    <div class="bg-emerald-600 p-6 rounded-2xl border-4 border-gold-400">
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-gold-400 mb-1">1</div>
+                            <div class="text-sm text-emerald-200">Lesson</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Introduction -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div class="flex items-start gap-4">
+                <div class="bg-blue-100 p-3 rounded-lg">
+                    <i class="fa-solid fa-info-circle text-blue-600 text-2xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-3">Lesson Overview</h2>
+                    <p class="text-gray-600 mb-4">
+                        In this lesson, you'll master the most common Arabic greetings and learn how to introduce yourself. 
+                        These phrases are essential for any Arabic conversation and will help you make a great first impression.
+                    </p>
+                    <div class="flex flex-wrap gap-4 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-book text-emerald-700"></i>
+                            <span class="text-gray-700"><strong>20 words</strong> to learn</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-emerald-700"></i>
+                            <span class="text-gray-700"><strong>~15 minutes</strong></span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-signal text-emerald-700"></i>
+                            <span class="text-gray-700"><strong>Beginner</strong> level</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vocabulary Cards -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-emerald-950 mb-6 text-center">Vocabulary</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Word Card 1 -->
+                <div class="word-card bg-white rounded-xl shadow-md p-6 border-l-4 border-emerald-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold">Greeting</span>
+                        <i class="fa-solid fa-volume-up text-gold-500 text-xl cursor-pointer hover:text-gold-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-arabic font-bold text-gray-800 mb-2 text-right">السلام عليكم</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">As-salamu alaykum</p>
+                    <p class="text-gray-600 text-sm">Peace be upon you (Hello)</p>
+                </div>
+
+                <!-- Word Card 2 -->
+                <div class="word-card bg-white rounded-xl shadow-md p-6 border-l-4 border-emerald-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold">Response</span>
+                        <i class="fa-solid fa-volume-up text-gold-500 text-xl cursor-pointer hover:text-gold-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-arabic font-bold text-gray-800 mb-2 text-right">وعليكم السلام</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">Wa alaykum as-salam</p>
+                    <p class="text-gray-600 text-sm">And peace be upon you too (Hello back)</p>
+                </div>
+
+                <!-- Word Card 3 -->
+                <div class="word-card bg-white rounded-xl shadow-md p-6 border-l-4 border-gold-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-gold-100 text-gold-800 px-3 py-1 rounded-full text-xs font-semibold">Greeting</span>
+                        <i class="fa-solid fa-volume-up text-gold-500 text-xl cursor-pointer hover:text-gold-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-arabic font-bold text-gray-800 mb-2 text-right">صباح الخير</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">Sabah al-khayr</p>
+                    <p class="text-gray-600 text-sm">Good morning</p>
+                </div>
+
+                <!-- Word Card 4 -->
+                <div class="word-card bg-white rounded-xl shadow-md p-6 border-l-4 border-gold-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-gold-100 text-gold-800 px-3 py-1 rounded-full text-xs font-semibold">Response</span>
+                        <i class="fa-solid fa-volume-up text-gold-500 text-xl cursor-pointer hover:text-gold-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-arabic font-bold text-gray-800 mb-2 text-right">صباح النور</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">Sabah an-nur</p>
+                    <p class="text-gray-600 text-sm">Morning of light (Good morning response)</p>
+                </div>
+
+                <!-- Word Card 5 -->
+                <div class="word-card bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">Greeting</span>
+                        <i class="fa-solid fa-volume-up text-gold-500 text-xl cursor-pointer hover:text-gold-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-arabic font-bold text-gray-800 mb-2 text-right">مساء الخير</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">Masa al-khayr</p>
+                    <p class="text-gray-600 text-sm">Good evening</p>
+                </div>
+
+                <!-- Word Card 6 -->
+                <div class="word-card bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">Response</span>
+                        <i class="fa-solid fa-volume-up text-gold-500 text-xl cursor-pointer hover:text-gold-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-arabic font-bold text-gray-800 mb-2 text-right">مساء النور</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">Masa an-nur</p>
+                    <p class="text-gray-600 text-sm">Evening of light (Good evening response)</p>
+                </div>
+
+                <!-- Word Card 7 -->
+                <div class="word-card bg-white rounded-xl shadow-md p-6 border-l-4 border-purple-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Introduction</span>
+                        <i class="fa-solid fa-volume-up text-gold-500 text-xl cursor-pointer hover:text-gold-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-arabic font-bold text-gray-800 mb-2 text-right">أهلاً</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">Ahlan</p>
+                    <p class="text-gray-600 text-sm">Hello / Welcome</p>
+                </div>
+
+                <!-- Word Card 8 -->
+                <div class="word-card bg-white rounded-xl shadow-md p-6 border-l-4 border-purple-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Introduction</span>
+                        <i class="fa-solid fa-volume-up text-gold-500 text-xl cursor-pointer hover:text-gold-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-arabic font-bold text-gray-800 mb-2 text-right">مرحباً</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">Marhaban</p>
+                    <p class="text-gray-600 text-sm">Hello / Welcome</p>
+                </div>
+
+                <!-- Word Card 9 -->
+                <div class="word-card bg-white rounded-xl shadow-md p-6 border-l-4 border-pink-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-xs font-semibold">Question</span>
+                        <i class="fa-solid fa-volume-up text-gold-500 text-xl cursor-pointer hover:text-gold-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-arabic font-bold text-gray-800 mb-2 text-right">كيف حالك؟</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">Kayfa halak?</p>
+                    <p class="text-gray-600 text-sm">How are you? (to male)</p>
+                </div>
+
+                <!-- Word Card 10 -->
+                <div class="word-card bg-white rounded-xl shadow-md p-6 border-l-4 border-pink-500">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-xs font-semibold">Response</span>
+                        <i class="fa-solid fa-volume-up text-gold-500 text-xl cursor-pointer hover:text-gold-600"></i>
+                    </div>
+                    <h3 class="text-3xl font-arabic font-bold text-gray-800 mb-2 text-right">بخير، الحمد لله</h3>
+                    <p class="text-lg font-semibold text-gray-700 mb-1">Bi-khayr, alhamdulillah</p>
+                    <p class="text-gray-600 text-sm">I'm fine, thank God</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Practice Exercise -->
+        <section class="bg-gradient-to-br from-emerald-100 to-gold-50 rounded-xl shadow-lg p-8 mb-8">
+            <div class="text-center mb-6">
+                <i class="fa-solid fa-pen-to-square text-4xl text-emerald-700 mb-3"></i>
+                <h2 class="text-3xl font-bold text-emerald-950 mb-2">Quick Practice</h2>
+                <p class="text-gray-700">Test your knowledge with this quick exercise</p>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 max-w-2xl mx-auto">
+                <p class="text-lg text-gray-800 mb-4 font-semibold">
+                    <i class="fa-solid fa-question-circle text-emerald-700 mr-2"></i>
+                    How would you greet someone in the morning?
+                </p>
+                <div class="space-y-3">
+                    <button class="w-full text-left p-4 rounded-lg border-2 border-gray-200 hover:border-emerald-500 hover:bg-emerald-50 transition font-arabic">
+                        أ. مساء الخير
+                    </button>
+                    <button class="w-full text-left p-4 rounded-lg border-2 border-gray-200 hover:border-emerald-500 hover:bg-emerald-50 transition font-arabic">
+                        ب. صباح الخير ✓
+                    </button>
+                    <button class="w-full text-left p-4 rounded-lg border-2 border-gray-200 hover:border-emerald-500 hover:bg-emerald-50 transition font-arabic">
+                        ج. تصبح على خير
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultural Note -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8 border-l-4 border-gold-500">
+            <div class="flex items-start gap-4">
+                <div class="bg-gold-100 p-3 rounded-lg">
+                    <i class="fa-solid fa-lightbulb text-gold-600 text-2xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-3">Cultural Insight</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        In Arabic-speaking cultures, greetings are very important and often involve asking about one's health and family. 
+                        <strong>As-salamu alaykum</strong> (peace be upon you) is the most common Islamic greeting used throughout the day. 
+                        The response <strong>Wa alaykum as-salam</strong> (and peace be upon you too) is equally important and should always be given.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="flex justify-between items-center">
+            <a href="./index.html" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-lg transition">
+                <i class="fa-solid fa-arrow-left mr-2"></i> Back to Lessons
+            </a>
+            <a href="./Lesson2.html" class="bg-emerald-700 hover:bg-emerald-800 text-white font-bold py-3 px-6 rounded-lg transition">
+                Next Lesson <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-950 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-2">
+                <i class="fa-solid fa-mosque text-gold-400 text-xl"></i>
+                <span class="text-lg font-bold">Al-Manara</span>
+                <span class="text-xs text-emerald-300 font-arabic">المنارة</span>
+            </div>
+            <p class="text-emerald-300 text-sm">&copy; 2025 Al-Manara. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
